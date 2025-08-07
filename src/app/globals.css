@@ -1,8 +1,24 @@
 @import "tailwindcss";
 
-@theme inline {
-  --font-markazi-text: var(--font-markazi-text);
-  --font-karla: var(--font-karla);
+:root {
+  --primary-yellow: #f4ce14;
+  --primary-green: #495e57;
+  --secondary-red: #ee9972;
+  --secondary-orange: #fbdabb;
+  --secondary-gray: #edefee;
+  --secondary-blue: #333333;
+}
+
+@theme inline{
+  --color-primary-yellow: var(--primary-yellow);
+  --color-primary-green: var(--primary-green);
+  --color-secondary-red: var(--secondary-red);
+  --color-secondary-orange: var(--secondary-orange);
+  --color-secondary-gray: var(--secondary-gray);
+  --color-secondary-blue: var(--secondary-blue);
+
+  --font-family-markazi: var(--font-markazi-text);
+  --font-family-karla: var(--font-karla);
 }
 
 body {
