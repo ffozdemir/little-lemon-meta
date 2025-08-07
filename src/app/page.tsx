@@ -1,7 +1,9 @@
+import Hero from "@/components/layout/Hero";
+
 export default function Home() {
   return (
-    <div className="font-karla items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20">
-      
-    </div>
+    <>
+      <Hero />
+    </>
   );
 }

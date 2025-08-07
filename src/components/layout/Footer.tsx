@@ -6,23 +6,23 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-secondary-gray text-primary-green">
-      <Container className="flex flex-col md:flex-row items-center justify-evenly py-8">
+      <Container className="flex flex-col md:flex-row items-center justify-evenly text-center md:text-start py-8">
         <Image
           src={"/secondary-logo.png"}
           alt="Little Lemon Logo"
           width={120}
           height={120}
         />
-        <Nav type="column" />
+        <Nav type="column" className="mt-5" />
         <div>
-          <h2 className="text-lg">Contact</h2>
+          <h2 className="text-lg underline mt-5">Contact</h2>
           <address>123 Little Lemon St.</address>
           <a href="tel:+12345678979" target="_blank" rel="noopener noreferrer">
             +12345678979
           </a>
         </div>
         <div>
-          <h2 className="text-lg">Follow Us</h2>
+          <h2 className="text-lg underline mt-5">Follow Us</h2>
           <ul className="flex flex-col gap-4">
             <li>
               <a

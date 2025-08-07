@@ -4,7 +4,7 @@ const Container = ({
   className,
   children,
 }: {
-  className: string | undefined;
+  className?: string ;
   children: React.ReactNode;
 }) => {
   return (

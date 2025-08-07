@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${markaziText.variable} ${karla.variable} antialiased`}>
-      <Header />
+        <Header />
         {children}
-      <Footer />
+        <Footer />
       </body>
     </html>
   );

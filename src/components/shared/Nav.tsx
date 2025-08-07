@@ -3,16 +3,18 @@ import React from "react";
 
 type NavProps = {
   type: "row" | "column";
+  className?: string;
 };
 
-const Nav = ({ type }: NavProps) => {
+const Nav = ({ type, className }: NavProps) => {
   const navType: string = type === "row" ? "flex-row" : "flex-col";
-  const navClass: string = `flex ${navType} gap-4`;
+  const classProp = className ? className : "";
+  const navClass: string = `flex ${navType} gap-4 ` + classProp;
 
   const linkCommon: string =
-    "hover:underline hover:decoration-2 hover:decoration-primary-yellow md:text-lg text-sm ";
+    "hover:underline hover:decoration-2 hover:decoration-primary-yellow md:text-lg text-md ";
 
-  const linkSpesific: string =
+  const linkSpecific: string =
     type === "row" ? "text-secondary-blue " : "text-primary-green ";
 
   const linkElements: {
@@ -31,8 +33,8 @@ const Nav = ({ type }: NavProps) => {
     <nav>
       <ul className={navClass}>
         {linkElements.map((link) => (
-          <li key={link.label}>
-            <Link href={link.href} className={linkCommon + linkSpesific}>
+          <li key={`${link.href}-${link.label}`}>
+            <Link href={link.href} className={linkCommon + linkSpecific}>
               {link.label}
             </Link>
           </li>
