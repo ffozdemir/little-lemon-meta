@@ -13,7 +13,7 @@ const TestimonialCard = ({
   rating: number;
 }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm w-full">
+    <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm w-full hover:shadow-2xl hover:scale-105 transition-shadow duration-300">
       <div className="flex items-center mb-4">
         <Image
           src={image}

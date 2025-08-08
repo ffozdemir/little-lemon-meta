@@ -25,14 +25,14 @@ const About = () => {
             alt="About Little Lemon"
             width={400}
             height={600}
-            className="rounded-2xl md:absolute top-20 left-5  object-cover z-10"
+            className="rounded-2xl md:absolute top-20 left-5  object-cover z-10 hover:z-100 hover:rotate-10 transition-rotate duration-300"
           />
           <Image
             src="/images/chef.jpg"
             alt="Chef at Little Lemon"
             width={400}
             height={600}
-            className="rounded-2xl md:absolute bottom-20 right-0 object-cover z-20"
+            className="rounded-2xl md:absolute bottom-20 right-0 object-cover z-20 hover:z-100 hover:rotate-10 transition-rotate duration-300"
           />
         </div>
       </section>
