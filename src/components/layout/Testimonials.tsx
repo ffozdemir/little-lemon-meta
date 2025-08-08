@@ -31,11 +31,12 @@ const Testimonials = () => {
   ];
 
   return (
-    <Container className="py-16">
-      <h2 className="text-5xl font-bold text-center text-secondary-blue  mb-8 font-family-markazi">
-        Testimonials
-      </h2>
-      <section>
+    <section className="bg-secondary-gray">
+      <Container className="py-16">
+        <h2 className="text-5xl font-bold text-center text-secondary-blue  mb-8 font-family-markazi">
+          Testimonials
+        </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
           {personalReviews.map((review) => (
             <TestimonialCard
@@ -47,8 +48,8 @@ const Testimonials = () => {
             />
           ))}
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 
