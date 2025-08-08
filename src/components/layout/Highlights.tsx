@@ -29,7 +29,7 @@ const Highlights = () => {
 
   return (
     <Container className="py-16">
-      <h2 className="text-4xl font-bold text-left my-8">
+      <h2 className="text-6xl font-bold text-left my-8 text-secondary-blue font-family-markazi">
         This weeks specials!
       </h2>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">

@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "../shared/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,9 +17,12 @@ const Hero = () => {
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
-            <button className="px-8 py-3 bg-primary-yellow text-secondary-blue rounded-2xl hover:bg-yellow-500 transition-colors cursor-pointer font-bold">
+            <Link
+              href="/reservation"
+              className="px-8 py-3 bg-primary-yellow text-secondary-blue rounded-2xl hover:bg-yellow-500 transition-colors cursor-pointer font-bold"
+            >
               Reserve a Table
-            </button>
+            </Link>
           </div>
 
           <div className="relative h-[400px] md:h-[450px] md:absolute md:right-10 md:top-48 md:-translate-y-1/2 md:w-[35%] rounded-2xl overflow-hidden">
